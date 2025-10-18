@@ -1,0 +1,39 @@
+{
+    "auth": {
+        "username": "jadsoncardoso_XILhv0",
+        "access_key": "CB6QViBzwzX9agyS18j3"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest",
+                "latest-1"
+            ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "./cypress.config.js",
+        "cypress_version": "13.latest",
+        "project_name": "Pos-Web",
+        "build_name": "build-name",
+        "exclude": [],
+        "parallels": 1,
+        "npm_dependencies": {
+            "@faker-js/faker": "^9.9.0",
+            "cypress-mochawesome-reporter": "^4.0.2"
+        },
+        "auto_import_dev_dependencies": false,
+        "exclude_dependencies": [],
+        "package_config_options": {},
+        "headless": true
+    },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+    "disable_usage_reporting": false
+}
