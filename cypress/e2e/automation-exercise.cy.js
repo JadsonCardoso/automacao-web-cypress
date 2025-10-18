@@ -36,7 +36,7 @@ describe('Automation Exercise', () => {
         cy.get('button[data-qa=create-account]').click()
 
         // Triplo A - arrange, Act, Assert 
-        cy.d('includes', 'account_created');url().shoul// A url()Ela retorna o URL atual da página '.should('includes' verifica se na página contém o valor passado que em nosso teste é 'account_created'
+        cy.get('includes', 'account_created').url().shoul// A url()Ela retorna o URL atual da página '.should('includes' verifica se na página contém o valor passado que em nosso teste é 'account_created'
         cy.contains('b', 'Account Created!') // Verificando se na  página tem a tag B tem o texto passado
     })
 
