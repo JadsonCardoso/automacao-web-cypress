@@ -1,0 +1,28 @@
+name: Web E2E Tests
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Clona o repositório
+      - uses: actions/checkout@v4
+
+      # Instala o Node.js (certifique-se da versão que você quer usar)
+      - name: Setup Node.js
+        run: node --version
+
+      # Exibe a versão do Node
+      - name: Verificando versão do Node.js
+        run: node --version
+
+      # Instala dependências do projeto
+      - name: Instalando dependências
+        run: npm install
+
+      # Executa os testes com Cypress
+      - name: Executando testes E2E com Cypress
+        run: npx cypress run
